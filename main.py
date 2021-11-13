@@ -13,15 +13,15 @@ user_numbers = int(input(f"How many numbers would you like?\n"))
 password = ""
 for letter in range(0, user_letters):
   letter = random.choice(letters)
-  password += str(letter)
+  password += letter
 # print(password1)
 for sym in range(0, user_symbols):
   sym = random.choice(symbols)
-  password += str(sym)
+  password += sym
 # print(password2)
 for num in range(0, user_numbers):
   num = random.choice(numbers)
-  password += str(num)
+  password += num
 # print(password3)
 
 a =  ''.join(random.sample(password,len(password)))
